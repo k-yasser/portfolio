@@ -1,0 +1,140 @@
+/* About Section Styles */
+.about {
+    padding: 80px 20px;
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 110vh;
+}
+
+.about-container {
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Animation class for title and text */
+.about-title,
+.about-text,
+.skills-section,
+.programming-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about-title.fade-in,
+.about-text.fade-in,
+.skills-section.fade-in,
+.programming-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffff;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-top: 40px;
+}
+
+.skills-section h3 {
+    font-size: 1.8rem;
+    color: #ffff;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-list li {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Skills with Gold and Yellow */
+.skills-list li:hover {
+    transform: scale(1.05);
+    background-color: #FFD700; /* Gold */
+    color: #000; /* Change text color to black for contrast */
+    border: 1px solid #FFDA44; /* Yellow border */
+}
+
+/* Programming Languages Section */
+.programming-section {
+    margin-top: 40px;
+}
+
+.programming-section h3 {
+    font-size: 1.8rem;
+    color: #ffff;
+    margin-bottom: 15px;
+}
+
+.programming-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.programming-list li {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Programming Languages with Gold and Yellow */
+.programming-list li:hover {
+    transform: scale(1.05);
+    background-color: #FFD700; /* Gold */
+    color: #000; /* Change text color to black for contrast */
+    border: 1px solid #FFDA44; /* Yellow border */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .skills-list li,
+    .programming-list li {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}

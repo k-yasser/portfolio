@@ -1,0 +1,80 @@
+.project-section {
+  padding: 60px 0;
+  background-color: #111;  /* Keep background color grey immediately */
+  color: white;
+  text-align: center;
+}
+
+.project-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0; /* Cards start invisible */
+  transform: translateY(50px); /* Cards start slightly down */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.project-card.fade-up {
+  opacity: 1;
+  transform: translateY(0); /* Move to final position */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image,
+.project-video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-info h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.project-card .btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #444;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #f1c40f;
+  color: #000;
+  transform: translateY(-5px);
+}
