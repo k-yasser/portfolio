@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import me from '../me.jpg';  // replace with your actual image path
-import projectVideo from '../me1.mp4';  // replace with your actual video path
+import projectVideo from '../me.mp4';  // replace with your actual video path
 import './Projects.css';
 
 const Projects = () => {
