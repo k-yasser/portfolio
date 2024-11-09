@@ -12,17 +12,17 @@ function Sidebar() {
         <div className="line"></div>
         <ul>
           <li>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/yasser.kadid.5/" target="_blank" rel="noopener noreferrer">
             <img src={facebookLogo} alt="Facebook" className="social-logo" />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/kadid-yasser-739b7a316/" target="_blank" rel="noopener noreferrer">
             <img src={githubLogo} alt="Facebook" className="social-logo" />
             </a>
           </li>
           <li>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/k-yasser" target="_blank" rel="noopener noreferrer">
             <img src={linkedInLogo} alt="Facebook" className="social-logo" />
             </a>
           </li>

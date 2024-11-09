@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import me from '../me.jpg';  // replace with your actual image path
-import projectVideo from '../me.mp4';  // replace with your actual video path
+import me from '../me.jpg';
+import tiki from '../tiki.png'; 
+import buyit from '../buy-it.png'; // replace with your actual image path
+  // replace with your actual video path
 import './Projects.css';
 
 const Projects = () => {
@@ -34,24 +36,24 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Project 1',
-      description: 'This is a brief description of Project 1.',
-      image: me,
-      video: projectVideo,
+      title: 'Tiki',
+      description: 'Tiki is a mobile app which unable usersto book their bus ticket without loosing much time.They can also select their seats.',
+      image: tiki,
+      //video: projectVideo,
       github: 'https://github.com/yourusername/project1'
     },
     {
-      title: 'Project 2',
-      description: 'This is a brief description of Project 2.',
-      image: me,
-      video: projectVideo,
+      title: 'Buy-it',
+      description: 'BUY-IT est une plateforme electronique qui permet aux utilisateurs d’acheter des produits enligne dans plusieurs boutiques gerer par les vendeurs avec une interface conviviale et un system securise.',
+      image: buyit,
+      //video: projectVideo,
       github: 'https://github.com/yourusername/project2'
     },
     {
       title: 'Project 3',
       description: 'This is a brief description of Project 3.',
       image: me,
-      video: projectVideo,
+      //video: projectVideo,
       github: 'https://github.com/yourusername/project3'
     }
   ];

@@ -29,22 +29,14 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="contact-container">
-        <h2 className={`contact-title ${isInView ? 'fade-in' : ''}`}>Contact Me</h2>
+        <h2 className={`contact-title ${isInView ? 'fade-in' : ''}`}>Get in Touch</h2>
         <p className={`contact-text ${isInView ? 'fade-in' : ''}`}>
-          I would love to hear from you! Whether you have a question, a project idea, or just want to
-          connect, feel free to send me a message. I'm always open to discussing new opportunities
-          and collaborations.
+          I'm always open to discuss new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through the following channels:
         </p>
         
-        <div className={`contact-form ${isInView ? 'fade-in' : ''}`}>
-          <form>
-            <div className="form-group">
-              <input type="text" placeholder="Name" required />
-              <input type="email" placeholder="Email" required />
-            </div>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
-          </form>
+        <div className={`contact-details ${isInView ? 'fade-in' : ''}`}>
+          <p><strong>Email:</strong> your-email@example.com</p>
+          <p><strong>Phone:</strong> +123 456 7890</p>
         </div>
       </div>
     </section>

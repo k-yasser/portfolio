@@ -1,7 +1,7 @@
 /* Header styles */
 .header {
     background-color: #1e1e1e;
-    padding: 15px 0; /* Make the header smaller */
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -11,14 +11,19 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.logo-image {
+    height: 50px;
+    width: auto;
+}
+
 .header.visible {
     transform: translateY(0);
     opacity: 1;
 }
 
 .header.hidden {
-    transform: translateY(-100%); /* Move header up to hide it */
-    opacity: 0; /* Fade out */
+    transform: translateY(-100%);
+    opacity: 0;
 }
 
 .navbar {
@@ -32,7 +37,7 @@
 
 .navbar-logo a {
     color: white;
-    font-size: 1.5rem; /* Adjust font size for a smaller header */
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -41,11 +46,11 @@
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px; /* Adjust gap for a smaller header */
+    gap: 20px;
 }
 
 .nav-links li a {
-    font-size: 0.9rem; /* Adjust font size for a smaller header */
+    font-size: 0.9rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -58,14 +63,40 @@
     transform: translateY(-3px);
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1e1e1e;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     }
 
-    .navbar-logo {
-        flex-grow: 1;
-        text-align: center;
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
     }
 }

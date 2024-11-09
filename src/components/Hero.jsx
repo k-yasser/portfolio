@@ -56,13 +56,13 @@ const Hero = () => {
         <h1>Front-End React Developer 👋</h1>
         <p>Hi, I'm Yasser. A passionate Front-end Developer focused on creating modern, user-friendly interfaces.</p>
         <div className="social-icons">
-          <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/k-yasser" target="_blank" rel="noopener noreferrer">
             <img src={githubIcon} alt="GitHub Icon" />
           </a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/kadid-yasser-739b7a316/" target="_blank" rel="noopener noreferrer">
             <img src={linkedinIcon} alt="LinkedIn Icon" />
           </a>
-          <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/yasser.kadid.5/" target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram Icon" />
           </a>
         </div>

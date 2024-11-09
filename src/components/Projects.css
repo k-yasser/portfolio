@@ -1,6 +1,7 @@
+/* Project Section Styles */
 .project-section {
-  padding: 60px 0;
-  background-color: #111;  /* Keep background color grey immediately */
+  padding: 60px 20px;
+  background-color: #111;
   color: white;
   text-align: center;
 }
@@ -13,58 +14,62 @@
 
 .project-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for responsiveness */
   gap: 20px;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1200px; /* Reduced max-width for better fit */
   margin: 0 auto;
 }
 
+/* Project Card Styles */
 .project-card {
   background-color: #000;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  opacity: 0; /* Cards start invisible */
-  transform: translateY(50px); /* Cards start slightly down */
+  opacity: 0;
+  transform: translateY(50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .project-card.fade-up {
   opacity: 1;
-  transform: translateY(0); /* Move to final position */
+  transform: translateY(0);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
 }
 
+/* Fixed Size for Image and Video */
 .project-image,
 .project-video {
   width: 100%;
-  height: 300px;
+  height: 220px; /* Slightly smaller height for better fit */
   object-fit: cover;
 }
 
+/* Project Information Section */
 .project-info {
-  padding: 20px;
+  padding: 15px;
   text-align: left;
 }
 
 .project-info h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: white;
   margin-bottom: 10px;
 }
 
 .project-info p {
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #ccc;
 }
 
+/* GitHub Button Styles */
 .project-card .btn {
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 25px;
   background-color: #333;
   color: white;
@@ -77,4 +82,51 @@
   background-color: #f1c40f;
   color: #000;
   transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .project-section h2 {
+    font-size: 2rem;
+  }
+  
+  .project-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid for tablet screens */
+  }
+
+  .project-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-image,
+  .project-video {
+    height: 180px; /* Reduce image/video size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr; /* One project per row on mobile screens */
+  }
+
+  .project-image,
+  .project-video {
+    height: 160px; /* Further reduce image/video size for mobile */
+  }
+  
+  .project-card .btn {
+    font-size: 0.9rem;
+  }
 }
